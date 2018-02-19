@@ -1,4 +1,4 @@
-# generator-es-6-webpack-template 
+# generator-es6-webpack-template 
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -8,17 +8,17 @@
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-es-6-webpack-template using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-es6-webpack-template using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
-npm install -g generator-es-6-webpack-template
+npm install -g generator-es6-webpack-template
 ```
 
 Then generate your new project:
 
 ```bash
-yo es-6-webpack-template
+yo es6-webpack-template
 ```
 
 ## Getting To Know Yeoman
@@ -39,3 +39,6 @@ MIT © [kkito]()
 [travis-url]: https://travis-ci.org/kkito/generator-es6-webpack-template
 [daviddm-image]: https://david-dm.org/kkito/generator-es6-webpack-template.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/kkito/generator-es6-webpack-template
+
+travis setup npm --force
+0ec34ebf-c9f5-4708-8d35-9afa81c580cb
