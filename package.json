@@ -1,6 +1,6 @@
 {
-  "name": "generator-es-6-webpack-template",
-  "version": "0.0.0",
+  "name": "generator-es6-webpack-template",
+  "version": "0.0.1",
   "description": "yeoman generator es6 webpack ",
   "homepage": "",
   "author": {

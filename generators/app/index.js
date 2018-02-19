@@ -9,7 +9,7 @@ module.exports = class extends Generator {
     this.log(
       yosay(
         'Welcome to the geometric ' +
-          chalk.red('generator-es-6-webpack-template') +
+          chalk.red('generator-es6-webpack-template') +
           ' generator!'
       )
     );
@@ -17,8 +17,8 @@ module.exports = class extends Generator {
     const prompts = [
       {
         type: 'confirm',
-        name: 'someAnswer',
-        message: 'Would you like to enable this option?',
+        name: 'useYarn',
+        message: 'Would you like to use yarn?',
         default: true
       }
     ];
@@ -30,13 +30,32 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
-    );
+    const copyFiles = [
+      '__tests__',
+      'src',
+      '_babelrc',
+      '_eslintrc.json',
+      '_gitignore',
+      'package.json',
+      'webpack.config.js'
+    ];
+
+    copyFiles.forEach(file => {
+      const targetFile = file.replace(/^_/, '.');
+      this.fs.copy(this.templatePath(file), this.destinationPath(targetFile));
+    });
   }
 
   install() {
-    this.installDependencies();
+    let dependency = {
+      npm: true,
+      yarn: false,
+      bower: false
+    };
+    if (this.props.useYarn) {
+      dependency.useYarn = true;
+      dependency.npm = false;
+    }
+    this.installDependencies(dependency);
   }
 };
