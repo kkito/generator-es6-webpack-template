@@ -1,5 +1,8 @@
-# generator-es-6-webpack-template [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> yeoman generator es6 webpack 
+# generator-es-6-webpack-template 
+
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+
+> yeoman generator-es6-webpack 
 
 ## Installation
 
