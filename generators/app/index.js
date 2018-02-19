@@ -53,7 +53,7 @@ module.exports = class extends Generator {
       bower: false
     };
     if (this.props.useYarn) {
-      dependency.useYarn = true;
+      dependency.yarn = true;
       dependency.npm = false;
     }
     this.installDependencies(dependency);
