@@ -41,7 +41,7 @@
     "prepublish": "nsp check",
     "pretest": "eslint .",
     "precommit": "lint-staged",
-    "test": "jest"
+    "test": "jest __tests__"
   },
   "lint-staged": {
     "*.js": [

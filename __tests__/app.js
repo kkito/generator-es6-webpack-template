@@ -11,6 +11,6 @@ describe('generator-es-6-webpack-template:app', () => {
   });
 
   it('creates files', () => {
-    assert.file(['dummyfile.txt']);
+    assert.file(['package.json']);
   });
 });

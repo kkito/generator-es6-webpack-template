@@ -1,7 +1,9 @@
-sudo: false
 language: node_js
 node_js:
-  - node
+  - v9
+  - v8
+  - v6
+  - v4
 install:
   - yarn
 script:

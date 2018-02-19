@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --progress --open-page dist/",
     "lint": "eslint src/js/",
-    "test": "jest",
+    "test": "jest ./__tests__/",
     "build": "webpack"
   },
   "author": "",

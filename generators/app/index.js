@@ -30,18 +30,19 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    const copyFiles = [
-      '__tests__',
-      'src',
-      '_babelrc',
-      '_eslintrc.json',
-      '_gitignore',
-      'package.json',
-      'webpack.config.js'
-    ];
+    const copyFiles = {
+      tests: '__tests__',
+      src: 'src',
+      __babelrc: '.babelrc',
+      '__eslintrc.json': '.eslintrc.json',
+      __gitignore: '.gitignore',
+      '_package.json': 'package.json',
+      '_webpack.config.js': 'webpack.config.js'
+    };
 
-    copyFiles.forEach(file => {
-      const targetFile = file.replace(/^_/, '.');
+    const keys = Object.keys(copyFiles);
+    keys.forEach(file => {
+      const targetFile = copyFiles[file];
       this.fs.copy(this.templatePath(file), this.destinationPath(targetFile));
     });
   }
