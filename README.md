@@ -1,6 +1,8 @@
 # generator-es-6-webpack-template 
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+[![NPM version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Dependency Status][daviddm-image]][daviddm-url]
 
 > yeoman generator-es6-webpack 
 
@@ -31,9 +33,9 @@ yo es-6-webpack-template
 MIT © [kkito]()
 
 
-[npm-image]: https://badge.fury.io/js/generator-es-6-webpack-template.svg
-[npm-url]: https://npmjs.org/package/generator-es-6-webpack-template
-[travis-image]: https://travis-ci.org/kkito/generator-es-6-webpack-template.svg?branch=master
-[travis-url]: https://travis-ci.org/kkito/generator-es-6-webpack-template
-[daviddm-image]: https://david-dm.org/kkito/generator-es-6-webpack-template.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/kkito/generator-es-6-webpack-template
+[npm-image]: https://badge.fury.io/js/generator-es6-webpack-template.svg
+[npm-url]: https://npmjs.org/package/generator-es6-webpack-template
+[travis-image]: https://travis-ci.org/kkito/generator-es6-webpack-template.svg?branch=master
+[travis-url]: https://travis-ci.org/kkito/generator-es6-webpack-template
+[daviddm-image]: https://david-dm.org/kkito/generator-es6-webpack-template.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/kkito/generator-es6-webpack-template
