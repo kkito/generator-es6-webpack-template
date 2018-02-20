@@ -11,6 +11,13 @@ describe('generator-es-6-webpack-template:app', () => {
   });
 
   it('creates files', () => {
-    assert.file(['package.json']);
+    const createFiles = [
+      'package.json',
+      'webpack.config.js',
+      '.gitignore',
+      '.babelrc',
+      '.eslintrc.json'
+    ];
+    assert.file(createFiles);
   });
 });
