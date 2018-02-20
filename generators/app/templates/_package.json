@@ -1,7 +1,7 @@
 {
-  "name": "test5",
+  "name": "<%= appname %>",
   "version": "1.0.0",
-  "description": "",
+  "description": "<%= appname %>",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --progress --open-page dist/",

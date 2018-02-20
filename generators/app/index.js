@@ -1,6 +1,7 @@
 'use strict';
 const Generator = require('yeoman-generator');
 const chalk = require('chalk');
+const path = require('path');
 const yosay = require('yosay');
 
 module.exports = class extends Generator {
@@ -43,7 +44,9 @@ module.exports = class extends Generator {
     const keys = Object.keys(copyFiles);
     keys.forEach(file => {
       const targetFile = copyFiles[file];
-      this.fs.copy(this.templatePath(file), this.destinationPath(targetFile));
+      this.fs.copyTpl(this.templatePath(file), this.destinationPath(targetFile), {
+        appname: path.basename(process.cwd())
+      });
     });
   }
 
