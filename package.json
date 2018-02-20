@@ -1,6 +1,6 @@
 {
   "name": "generator-es6-webpack-template",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "yeoman generator es6 webpack ",
   "homepage": "https://github.com/kkito/generator-es6-webpack-template",
   "author": {
