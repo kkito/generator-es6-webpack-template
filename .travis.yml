@@ -1,7 +1,15 @@
 language: node_js
 node_js:
-  - node
+- node
 install:
-  - yarn
+- yarn
 script:
-  - npm run test
+- npm run test
+deploy:
+  provider: npm
+  email: kkitokkito@gmail.com
+  api_key:
+    secure: FASg1VaZil1OWntHwUmVNwOx4ZAek8Qmo6ZHKRJlkqWBu14YYHlcJa06SIUKWbsdcphLBWue3DOc/lCvwH2pg0S6HyIgtWfjzEW/KnCkapXUY1CmguL64IFJjGy5ysme2en1y8afVTCQGzKuCWXl3sdFbwqZH/eWMPyNct5UckAdZMTp5UJxIK3GJnDOMk0Q+lk7xX6b1uAdO7LnJN97eAgvXvq5SpS5sA/K8RPenjfDOeZ8SU7nbsGRX+7LE/1oUlvBxVcKntV0HDEJcSQXV2jku9B1DlcM7f8OPAUlauo/PrqjeVhzsifLsxS6CrkOGs+pmuc2y0OP+tHYzKA2eCaRKSHoy5/YdYc/J6BpMwOficn5STEwQLSBO1i1YVUjoJbIBMJhiRWKuBszD7OF+LePXuv8KdrSTmOCw3cgcgnt/lyt0ThRa8LsONXx4nx5E68oQdE6uFjY1NrBs6HJ3ePn+ClaNzP6vQJJ/znGhLfnAhmC842+e78TAEn+NTzN/Y9+yjZwtNvTlEYgP2+eSErraZ6kxgWHGb8kC7RKycKCPvrwzpfogUUNckGzSjkyWj9iRijKZM1/MMyrCO+z5AdVSzwoGGpLHmXTWIQLidizmfJdCGqCLF8Ihav/w1KPQEB3mTTQSSFYpuGIH9Z0OnL2TP+vF/d4bta/0eq8i9g=
+  on:
+    tags: true
+    repo: kkito/generator-es6-webpack-template
