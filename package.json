@@ -1,6 +1,6 @@
 {
   "name": "generator-es6-webpack-template",
-  "version": "0.1.2",
+  "version": "0.1.6",
   "description": "yeoman generator es6 webpack ",
   "homepage": "https://github.com/kkito/generator-es6-webpack-template",
   "author": {
@@ -8,14 +8,9 @@
     "email": "kkito@sohu.com",
     "url": "http://kkshen.top/"
   },
-  "files": [
-    "generators"
-  ],
+  "files": ["generators"],
   "main": "generators/index.js",
-  "keywords": [
-    "yeoman es6 webpack generator",
-    "yeoman-generator"
-  ],
+  "keywords": ["yeoman es6 webpack generator", "yeoman-generator"],
   "devDependencies": {
     "yeoman-test": "^1.7.0",
     "yeoman-assert": "^3.1.0",
@@ -43,20 +38,11 @@
     "test": "jest __tests__"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.js": ["eslint --fix", "git add"],
+    "*.json": ["prettier --write", "git add"]
   },
   "eslintConfig": {
-    "extends": [
-      "xo",
-      "prettier"
-    ],
+    "extends": ["xo", "prettier"],
     "env": {
       "jest": true,
       "node": true
@@ -70,9 +56,7 @@
         }
       ]
     },
-    "plugins": [
-      "prettier"
-    ]
+    "plugins": ["prettier"]
   },
   "repository": "kkito/generator-es-6-webpack-template",
   "license": "MIT"
