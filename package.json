@@ -58,6 +58,6 @@
     },
     "plugins": ["prettier"]
   },
-  "repository": "kkito/generator-es-6-webpack-template",
+  "repository": "kkito/generator-es6-webpack-template",
   "license": "MIT"
 }
